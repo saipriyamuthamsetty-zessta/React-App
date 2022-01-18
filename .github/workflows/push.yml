@@ -22,5 +22,6 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: executing remote ssh commands using password
+        uses: ./
         run: ssh -i "Jayachandra_ec2_machine_github_action.pem" ubuntu@ec2-34-226-245-161.compute-1.amazonaws.com
       - run: echo "Connected"
