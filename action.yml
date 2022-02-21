@@ -20,5 +20,5 @@ inputs:
 
 runs:
   steps:
-    - name: Echo
-        run: echo "Hello world!"
+  - name: Echo
+    run: echo "Hello world!"
