@@ -5,13 +5,10 @@ on:
     inputs:
       message:
         description: "Message to echo"
-        required: true
-        # No default
+        required: false
 
 jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
     - run: echo "workflow1 entered"
-    - name: Echo message
-      run: echo '${{ github.event.inputs.message }}'
