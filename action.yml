@@ -21,4 +21,5 @@ inputs:
 runs:
   steps:
   - name: Echo
+    shell: bash
     run: echo "Hello world!"
