@@ -17,3 +17,8 @@ inputs:
   repo:
     description: 'Repo owner & name, slash separated, only set if invoking a workflow in a different repo'
     required: false 
+
+runs:
+  steps:
+    - name: Echo
+        run: echo "Hello world!"
