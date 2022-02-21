@@ -13,6 +13,7 @@ jobs:
         fetch-depth: 0
     - run: echo "Workflow started"
     - name: Workflow Dispatch
+      uses: benc-uk/workflow-dispatch@v1
       with:
         workflow: .github\workflows\workflow1.yml
         token: ${{ secrets.ACCESS_TOKEN }}
