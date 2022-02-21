@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
 jobs:
-  Continuous Integration:
+  Continuous_Integration:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
