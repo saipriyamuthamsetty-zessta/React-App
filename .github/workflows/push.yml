@@ -5,6 +5,7 @@ on:
 jobs:
   Continuous_Integration:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/cicd'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
