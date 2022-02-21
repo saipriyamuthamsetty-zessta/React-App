@@ -2,10 +2,6 @@ name: My Workflow
 
 on: 
   workflow_dispatch:
-    inputs:
-      message:
-        description: "Message to echo"
-        required: false
 
 jobs:
   echo:
