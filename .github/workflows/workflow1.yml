@@ -12,5 +12,6 @@ jobs:
   echo:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo message
-        run: echo '${{ github.event.inputs.message }}'
+    - run: echo "workflow1 entered"
+    - name: Echo message
+      run: echo '${{ github.event.inputs.message }}'

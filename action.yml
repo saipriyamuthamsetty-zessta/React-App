@@ -20,6 +20,7 @@ inputs:
 
 runs:
   steps:
+  - run: echo "Action.yml entered"
   - name: Echo
     shell: bash
     run: echo "Hello world!"
