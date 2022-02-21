@@ -12,7 +12,7 @@ on:
 jobs:
   Continuous_Integration:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/cicd'
+    if: github.ref == 'refs/heads/cd-check'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
