@@ -1,8 +1,6 @@
 name: CI
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -12,7 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - run: sudo npm install
       - run: npm ci
       - run: npm run build
 
@@ -23,4 +20,3 @@ jobs:
           REMOTE_HOST: 54.87.67.166
           REMOTE_USER: ubuntu
           TARGET: /home/ubuntu/react-app/_work/React-App/React-App
-      - run: sudo npm install
