@@ -17,7 +17,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Deploy code
+          Deployment testing
         </a>
       </header>
     </div>
